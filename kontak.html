@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klenteng Boen Tek Bio</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Fungsi untuk menampilkan konten yang sesuai saat hyperlink diklik
+    function showContent(page) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+      const activeSection = document.getElementById(page);
+      if (activeSection) {
+        activeSection.classList.add('active');
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Klenteng Boen Tek Bio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="sejarah.html">Sejarah</a></li>
+        <li><a href="arsitektur.html">Arsitektur</a></li>
+        <li><a href="upacara.html">Upacara</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="Lokasi.html">Lokasi</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+        <li><a href="kesan & pesan.html">Kesan & Pesan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h2>Kontak Kami</h2>
+      <p><strong>Telepon:</strong> 021-5522168  
+        <br>Hubungi nomor ini untuk informasi kegiatan keagamaan, jadwal upacara, atau reservasi kunjungan rombongan.</p>
+  
+      <p><strong>Email:</strong> btb.rumahbersama@gmail.com  
+       <br>Silakan kirim pertanyaan, permintaan informasi sejarah, atau kerjasama komunitas melalui email ini.</p>
+
+      <p><strong>Instagram:</strong> <a href="https://www.instagram.com/btb_rumahbersama" target="_blank">@btb_rumahbersama</a>  
+        <br>Ikuti akun resmi kami untuk mendapatkan update kegiatan, dokumentasi acara, dan edukasi budaya Tionghoa secara visual.</p>
+      <figure>
+        <img src="ig.jpg" alt="Kontak Klenteng" width="500">
+        <figcaption>Akun Instagram Boen Tek Bio .</figcaption>
+      </figure>
+ </div>
+  <script src="javascript.js"></script>
+</body>
+</html>

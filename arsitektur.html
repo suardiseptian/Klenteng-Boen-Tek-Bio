@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klenteng Boen Tek Bio</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Fungsi untuk menampilkan konten yang sesuai saat hyperlink diklik
+    function showContent(page) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+      const activeSection = document.getElementById(page);
+      if (activeSection) {
+        activeSection.classList.add('active');
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Klenteng Boen Tek Bio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="sejarah.html">Sejarah</a></li>
+        <li><a href="arsitektur.html">Arsitektur</a></li>
+        <li><a href="upacara.html">Upacara</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="lokasi.html">Lokasi</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+        <li><a href="kesan & pesan.html">Kesan & Pesan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h2>Arsitektur Klenteng Boen Tek Bio</h2>
+  <p>Bangunan klenteng ini memiliki arsitektur khas Tionghoa dengan atap melengkung (ekor walet), dihiasi ornamen naga dan burung phoenix sebagai simbol kekuatan dan keberuntungan. </p> 
+  <p>Sementara ukiran-ukiran detail di dinding dan altar menunjukkan nilai seni dan spiritualitas tinggi dalam budaya Tionghoa. </p>
+  <p>1. Melambangkan keterbukaan dan keagungan.</p>
+  <p>2. Bisa menolak bala karena bentuknya menyerupai sayap pelindung.</p>
+  <p>3. Membantu mengalirkan air hujan dengan lancar.</p>
+  <p>4. Secara estetika, memberi kesan megah dan sakral.</p>
+
+  <div class="gambar-container">
+    <figure>
+      <img src="atapklenteng.jpg" alt="Atap Klenteng" class="gambar-portrait">
+      <figcaption>Arsitektur atap Klenteng Boen Tek Bio.</figcaption>
+    </figure>
+    <figure>
+      <img src="rsuci.jpeg" alt="Ruang Suci Utama" class="gambar-portrait">
+      <figcaption>Ruang suci utama dipenuhi dengan ukiran-ukiran rumit khas bangunan Klenteng.</figcaption>
+    </figure>
+  </div>
+</body>
+</html>

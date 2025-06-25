@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klenteng Boen Tek Bio</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Fungsi untuk menampilkan konten yang sesuai saat hyperlink diklik
+    function showContent(page) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+      const activeSection = document.getElementById(page);
+      if (activeSection) {
+        activeSection.classList.add('active');
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Klenteng Boen Tek Bio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="sejarah.html">Sejarah</a></li>
+        <li><a href="arsitektur.html">Arsitektur</a></li>
+        <li><a href="upacara.html">Upacara</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="lokasi.html">Lokasi</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+        <li><a href="kesan & pesan.html">Kesan & Pesan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h2>Galeri Foto</h2>
+  <div class="gambar-container">
+    <figure>
+      <img src="malam.jpeg" alt="Suasana Imlek di Klenteng">
+      <figcaption>Suasana Imlek di Klenteng Boen Tek Bio.</figcaption>
+    </figure>
+    <figure>
+      <img src="ruangutama.jpg" alt="Ruang Utama Klenteng">
+      <figcaption>Ruang Utama Klenteng.</figcaption>
+    </figure>
+    <figure>
+      <img src="singa.jpeg" alt="Singa Penjaga">
+      <figcaption>Singa Penjaga di halaman depan Klenteng dibuat tahun 1827.</figcaption>
+    </figure>
+    <figure>
+    <img src="lonceng.jpg" alt="Lonceng tua" class="gambar-kecil">
+    <figcaption>Lonceng tua halaman depan Klenteng dibuat tahun 1835.</figcaption>
+    </figure>
+    <figure>
+      <img src="1940.jpeg" alt="Halaman belakang">
+      <figcaption>Beberapa orang berfoto di halaman Klenteng Boen Tek Bio tahun 1940.</figcaption>
+    </figure>
+    <figure>
+      <img src="1953.jpeg" alt="Halaman belakang">
+      <figcaption>Klenteng Boen Tek Bio tahun 1953.</figcaption>
+    </figure>
+    <figure>
+      <img src="paslam.jpeg" alt="Halaman belakang">
+      <figcaption>Suasana sekitar Klenteng tempo dulu.</figcaption>
+    </figure>
+    <figure>
+      <img src="ruangbelakang.jpg" alt="Halaman belakang">
+      <figcaption>Halaman belakang Klenteng.</figcaption>
+    </figure>
+  </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klenteng Boen Tek Bio</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Fungsi untuk menampilkan konten yang sesuai saat hyperlink diklik
+    function showContent(page) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+      const activeSection = document.getElementById(page);
+      if (activeSection) {
+        activeSection.classList.add('active');
+      }
+    }
+  </script>
+</head>
+<body>
+  <body>
+  <header>
+    <h1>Klenteng Boen Tek Bio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="sejarah.html">Sejarah</a></li>
+        <li><a href="arsitektur.html">Arsitektur</a></li>
+        <li><a href="upacara.html">Upacara</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="lokasi.html">Lokasi</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+        <li><a href="kesan & pesan.html">Kesan & Pesan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h2>Sejarah Klenteng Boen Tek Bio</h2>
+
+  <div class="konten-bersamping">
+    <div class="teks">
+      <p>Didirikan pada tahun 1684, Klenteng Boen Tek Bio merupakan salah satu klenteng tertua di Indonesia dan yang tertua di Kota Tangerang. Nama "Boen Tek Bio" berasal dari tiga kata dalam bahasa Tionghoa: Boen berarti “Intelektual”, Tek berarti “Kebajikan”, dan Bio berarti “Tempat Ibadah”. Secara keseluruhan, nama ini mengandung makna "Tempat bagi umat manusia untuk menjadi insan yang penuh kebajikan dan intelektual." </p> 
+      <p>Klenteng ini telah menjadi pusat aktivitas keagamaan dan budaya masyarakat Tionghoa di Tangerang sejak masa kolonial Belanda hingga sekarang. Bangunan ini telah ditetapkan sebagai Bangunan Cagar Budaya Kota Tangerang pada tahun 2011. Selain berfungsi sebagai tempat ibadah, Boen Tek Bio juga menjadi tempat berkumpul, bermusyawarah, dan menyelenggarakan kegiatan sosial. Setiap tahun, perayaan-perayaan penting seperti, Imlek, dan Cap go Meh digelar dengan meriah, mempererat hubungan antargenerasi dan lintas budaya. Letaknya yang strategis di kawasan Pasar Lama menjadikan klenteng ini tidak hanya sakral, tetapi juga bagian penting dari identitas sejarah kota Tangerang. Arsitektur, ritual, dan nilai-nilai yang dijaga di dalamnya menjadikan Klenteng Boen Tek Bio sebagai simbol toleransi, keberagaman, dan kelestarian budaya Tionghoa di Indonesia Khususnya bagi Kota Benteng (Tangerang). </p>
+    </div>
+
+
+    <div class="gambar">
+      <img src="1920.jpg" alt="Klenteng Boen Tek Bio sekitar Tahun 1920-1940">
+      <figcaption>Klenteng Boen Tek Bio sekitar Tahun 1920-1940.</figcaption>
+    </div>
+  </div>
+</body>
+</html>

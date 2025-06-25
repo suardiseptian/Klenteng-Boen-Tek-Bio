@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Klenteng Boen Tek Bio</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function showContent(page) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => section.classList.remove('active'));
+      const activeSection = document.getElementById(page);
+      if (activeSection) {
+        activeSection.classList.add('active');
+      }
+    }
+
+    // Fungsi dijalankan saat halaman siap
+    window.onload = function () {
+      const form = document.querySelector("form");
+      form.addEventListener("submit", function (e) {
+        e.preventDefault(); // Mencegah submit default
+        alert("Terima kasih atas pesan Anda!");
+
+        // Kirim form secara manual
+        form.submit();
+      });
+    };
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Klenteng Boen Tek Bio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="sejarah.html">Sejarah</a></li>
+        <li><a href="arsitektur.html">Arsitektur</a></li>
+        <li><a href="upacara.html">Upacara</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="lokasi.html">Lokasi</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+        <li><a href="kesan & pesan.html">Kesan & Pesan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="active">
+    <h2>Kesan & Pesan</h2>
+    <form onsubmit="event.preventDefault(); alert('Terima kasih atas pesan Anda!'); this.reset();">
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" name="nama" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="pesan">Pesan:</label>
+    <textarea id="pesan" name="pesan" rows="5" required></textarea>
+
+    <button type="submit">Kirim</button>
+    </form>
+  </section>
+</body>
+</html>

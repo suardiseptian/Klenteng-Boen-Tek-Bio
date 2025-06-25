@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klenteng Boen Tek Bio</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Fungsi untuk menampilkan konten yang sesuai saat hyperlink diklik
+    function showContent(page) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+      const activeSection = document.getElementById(page);
+      if (activeSection) {
+        activeSection.classList.add('active');
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Klenteng Boen Tek Bio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="sejarah.html">Sejarah</a></li>
+        <li><a href="arsitektur.html">Arsitektur</a></li>
+        <li><a href="upacara.html">Upacara</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="lokasi.html">Lokasi</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+        <li><a href="kesan & pesan.html">Kesan & Pesan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <h2>Lokasi Klenteng Boen Tek Bio</h2>
+      <p>Klenteng ini berada di Jl Bhakti No.14, RT.001/RW.004, Sukasari, Kec. Tangerang, Kota Tangerang, Banten 15118, dan berlokasi di dalam kawasan Pasar Lama Kota Tangerang, yang sejak zaman dahulu menjadi pusat aktivitas perdagangan dan interaksi budaya. Keberadaan Klenteng Boen Tek Bio di tengah kawasan bersejarah ini memperkuat peranannya sebagai tempat ibadah sekaligus simbol keberagaman dan toleransi antaretnis di Tangerang. Lokasinya yang strategis juga menjadikan klenteng ini mudah diakses oleh pengunjung lokal maupun wisatawan yang ingin mengenal lebih dekat warisan budaya Tionghoa di Kota Benteng.</p>
+      <figure>
+        <img src="lokasi.jpg" alt="Peta Lokasi Klenteng" width="500">
+        <figcaption>Peta lokasi Klenteng Boen Tek Bio.</figcaption>
+      </figure>
+      <figure>
+        <img src="lokasi1.jpg" alt="Peta Lokasi Klenteng" width="500">
+        <figcaption>Lokasi Klenteng Boen Tek Bio.</figcaption>
+      </figure>
+      <figure>
+        <img src="lokasi2.jpg" alt="Peta Lokasi Klenteng" width="500">
+        <figcaption>Suasana Pasar Lama disekitar Klenteng Boen Tek Bio.</figcaption>
+      </figure>
+  </div>
+</body>
+</html>

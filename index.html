@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Klenteng Boen Tek Bio</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Fungsi untuk menampilkan konten yang sesuai saat hyperlink diklik
+    function showContent(page) {
+      const sections = document.querySelectorAll('section');
+      sections.forEach(section => {
+        section.classList.remove('active');
+      });
+      const activeSection = document.getElementById(page);
+      if (activeSection) {
+        activeSection.classList.add('active');
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Klenteng Boen Tek Bio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="sejarah.html">Sejarah</a></li>
+        <li><a href="arsitektur.html">Arsitektur</a></li>
+        <li><a href="upacara.html">Upacara</a></li>
+        <li><a href="galeri.html">Galeri</a></li>
+        <li><a href="lokasi.html">Lokasi</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+        <li><a href="kesan & pesan.html">Kesan & Pesan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+  <h2>Klenteng Boen Tek Bio</h2>
+  <p> Klenteng Boen Tek Bio (文德廟) atau dikenal juga dengan nama Vihara Padumuttara merupakan klenteng tertua di Kota Tangerang. Klenteng ini tidak hanya menjadi tempat ibadah umat Tridharma (penganut ajaran Konfusianisme, Taoisme, dan Buddhisme), tetapi juga menjadi simbol warisan budaya Tionghoa yang telah mengakar kuat di wilayah Tangerang. 
+  <p> Selama berabad-abad, Boen Tek Bio telah menjadi penjaga nilai-nilai tradisi leluhur, tempat berlangsungnya berbagai upacara keagamaan dan adat, serta wadah untuk membina hubungan sosial dalam komunitas Tionghoa dan masyarakat sekitar. Keberadaan klenteng ini mencerminkan keragaman budaya Indonesia, di mana tradisi lokal dan etnis saling menghormati dan berdampingan dalam harmoni. Hingga kini, Boen Tek Bio tetap aktif dalam kegiatan sosial, budaya, dan spiritual, serta menjadi daya tarik wisata religi yang penting di Kota Tangerang. </p>
+
+  <div class="gambar-container">
+    <figure>
+      <img src="btb.jpg" alt="Klenteng Boen Tek Bio" class="gambar-portrait">
+      <figcaption>Klenteng Boen Tek Bio.</figcaption>
+    </figure>
+    <figure>
+          <video class="gambar-portrait" controls>
+          <source src="btb.mp4" type="video/mp4">
+          Browser Anda tidak mendukung video.
+          </video>
+          <figcaption>Video Klenteng Boen Tek Bio.</figcaption>
+    </figure>
+  </div>
+</body>
+</html>
